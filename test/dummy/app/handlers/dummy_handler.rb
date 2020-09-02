@@ -5,13 +5,11 @@ class DummyHandler < Slackify::Handlers::Base
 
   class << self
     def cool_command(_params)
-      # we just check that the output is the right one
-      puts "cool_command called"
+      Rails.logger.info("cool_command called")
     end
 
     def another_command(_params)
-      # we just check that the output is the right one
-      puts "another_command called"
+      Rails.logger.info("another_command called")
     end
 
     def button_clicked(params)
@@ -19,11 +17,11 @@ class DummyHandler < Slackify::Handlers::Base
       case params["actions"].first["name"]
       when "btn1"
         response[:attachments] = [{
-          "text": "Test"
+          "text": "Test",
         }]
       when "btn2"
         response[:attachments] = [{
-          "text": " Button two has been clicked"
+          "text": " Button two has been clicked",
         }]
       end
       response

@@ -1,4 +1,4 @@
-# Slackify [![Tests 🧪](https://github.com/jusleg/slackify/workflows/Tests%20%F0%9F%A7%AA/badge.svg)](https://github.com/jusleg/slackify/actions?query=workflow%3A%22Tests+%F0%9F%A7%AA%22) [![Lint 💎](https://github.com/jusleg/slackify/workflows/Lint%20%F0%9F%92%8E/badge.svg)](https://github.com/jusleg/slackify/actions?query=workflow%3A%22Lint+%F0%9F%92%8E%22) [![Gem Version](https://badge.fury.io/rb/slackify.svg)](https://badge.fury.io/rb/slackify) ![Gem downloads](https://img.shields.io/gem/dt/slackify)
+# Slackify [![Build status](https://badge.buildkite.com/9c442807c5228da62cc3c5974e0ddc550fdd4b0b4cc25227e5.svg)](https://buildkite.com/shopify/slackify)
 
 Slackify is a gem that allows to build slackbots on Rails using the [Event API](https://api.slack.com/events-api) from Slack.
 

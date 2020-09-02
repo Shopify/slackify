@@ -11,7 +11,12 @@ require 'byebug'
 
 # Filter out Minitest backtrace while allowing backtrace from other libraries
 # to be shown.
-Minitest.backtrace_filter = Minitest::BacktraceFilter.new
+Minitest::Reporters.configure do |configuration|
+  configuration.root = Rails.root
+  configuration.github_root = "https://github.com/Shopify/shopstatus"
+end
+
+Minitest::Reporters.use!
 
 module ActiveSupport
   class TestCase

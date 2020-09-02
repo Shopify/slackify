@@ -3,3 +3,7 @@
 source 'https://rubygems.org'
 
 gemspec
+
+group :test do
+  gem 'shopify_minitest_reporters', source: 'https://packages.shopify.io/shopify/gems'
+end

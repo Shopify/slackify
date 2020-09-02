@@ -1,0 +1,16 @@
+containers:
+  default:
+    docker: gcr.io/shopify-docker-images/ci/ruby27:Ruby-2.7.1-Node-12.18.3-Yarn-1.13.0
+
+steps:
+  - label: Tests
+    timeout: 5m
+    run:
+      - bundle: ~
+      - bundle exec rake
+
+  - label: Rubocop
+    timeout: 5m
+    run:
+      - bundle: ~
+      - bundle exec rubocop

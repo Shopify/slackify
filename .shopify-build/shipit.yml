@@ -1,0 +1,3 @@
+ci:
+  require:
+    - buildkite/shopify-slash-shopify-minitest-reporters
